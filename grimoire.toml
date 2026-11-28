@@ -1,7 +1,7 @@
-# Grimoire book configuration for the @mplx/texttransform documentation.
+# Grimoire book configuration for the @skiffyard/texttransform documentation.
 
 [book]
-title = "@mplx/texttransform"
+title = "@skiffyard/texttransform"
 description = "Text transformations in printf's modifier style: case conversions (snake, kebab, camel, pascal, leet, ...), slicing, truncation"
 language = "en"
 src = "docs"
@@ -18,10 +18,13 @@ navPosition = "left"
 tocPosition = "right"
 tocDepth = 3
 sectionNumbers = true
-titleUrl = "https://mplx.github.io/deck-texttransform/"
-repoUrl = "https://github.com/mplx/deck-texttransform"
+titleUrl = "https://skiffyard.github.io/deck-texttransform/"
+logo = "skiffyard.svg"
+favicon = "skiffyard.svg"
+repoUrl = "https://github.com/skiffyard/deck-texttransform"
 repoLabel = "Source"
-editUrl = "https://github.com/mplx/deck-texttransform/edit/main/docs/{path}"
+editUrl = "https://github.com/skiffyard/deck-texttransform/edit/main/docs/{path}"
+footer = 'Part of <a href="https://github.com/skiffyard">Skiffyard</a>, small community decks for <a href="https://jennifer-lang.dev/">Jennifer</a>. Rendered with <a href="https://grimoire.jennifer-lang.dev/">Grimoire</a>.'
 
 [highlight]
 enabled = true

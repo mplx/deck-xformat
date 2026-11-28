@@ -1,13 +1,15 @@
 <!-- SPDX-License-Identifier: LGPL-3.0-only -->
 <!-- SPDX-FileCopyrightText: Copyright (C) 2026 mplx <mplx@jennifer-lang.dev> -->
 
-# @mplx/texttransform
+# @skiffyard/texttransform
 
 Text transformations in the style of `printf`'s modifiers: case
 conversions (snake, kebab, camel, pascal, constant, leet, ...), slicing,
 truncation, trimming. A spec is a `|`-separated list, applied left to
 right, so `"trim|fold|case=kebab"` turns `"  Crème Brûlée  "` into
 `"creme-brulee"`.
+
+This deck is part of [Skiffyard](https://github.com/skiffyard), small community decks for [Jennifer](https://jennifer-lang.dev/).
 
 ## Why a function and not a printf verb
 
@@ -20,7 +22,7 @@ presentation modifier on its typed arguments, and the transformed parts
 are plain strings.
 
 ```jennifer
-import "@mplx/texttransform/" as texttransform;
+import "@skiffyard/texttransform/" as texttransform;
 
 io.printf("%s=%d\n", texttransform.t("max retries", "case=constant"), 3);   # MAX_RETRIES=3
 io.printf("[%s]\n", texttransform.t($title, "squash|truncate=30"));

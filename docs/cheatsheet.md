@@ -3,11 +3,11 @@
 
 # texttransform cheatsheet
 
-Every export of `@mplx/texttransform`. Guides are listed in
+Every export of `@skiffyard/texttransform`. Guides are listed in
 [the introduction](index.md).
 
 ```jennifer
-import "@mplx/texttransform/" as texttransform;
+import "@skiffyard/texttransform/" as texttransform;
 ```
 
 A bad spec or style throws `Error{kind: "texttransform"}`.

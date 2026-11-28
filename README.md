@@ -1,8 +1,8 @@
-# @mplx/texttransform
+# @skiffyard/texttransform
 
-[![test](https://github.com/mplx/deck-texttransform/actions/workflows/test.yml/badge.svg)](https://github.com/mplx/deck-texttransform/actions/workflows/test.yml)
-[![Documentation](https://img.shields.io/badge/docs-github%20pages-blue)](https://mplx.github.io/deck-texttransform/)
-[![release](https://img.shields.io/github/v/release/mplx/deck-texttransform)](https://github.com/mplx/deck-texttransform/releases/latest)
+[![test](https://github.com/skiffyard/deck-texttransform/actions/workflows/test.yml/badge.svg)](https://github.com/skiffyard/deck-texttransform/actions/workflows/test.yml)
+[![Documentation](https://img.shields.io/badge/docs-github%20pages-blue)](https://skiffyard.github.io/deck-texttransform/)
+[![release](https://img.shields.io/github/v/release/skiffyard/deck-texttransform)](https://github.com/skiffyard/deck-texttransform/releases/latest)
 
 Text transformations in the style of `printf`'s modifiers for
 [Jennifer](https://jennifer-lang.dev/) programs: case conversions (snake,
@@ -11,12 +11,14 @@ trimming and folding, written as a `|`-separated spec such as
 `trim|fold|case=kebab`. It composes with `io.sprintf`, which keeps its own
 verbs and presentation modifiers.
 
-**[Documentation](https://mplx.github.io/deck-texttransform/)**
+This deck is part of [Skiffyard](https://github.com/skiffyard), small community decks for [Jennifer](https://jennifer-lang.dev/).
+
+**[Documentation](https://skiffyard.github.io/deck-texttransform/)**
 
 ## Install
 
 ```sh
-jvc add @mplx/texttransform
+jvc add @skiffyard/texttransform
 ```
 
 This vendors the deck to `vendor/<scope>/texttransform/`. Without `jvc`, unpack the
@@ -25,7 +27,7 @@ This vendors the deck to `vendor/<scope>/texttransform/`. Without `jvc`, unpack 
 ## Usage
 
 ```jennifer
-import "@mplx/texttransform/" as texttransform;
+import "@skiffyard/texttransform/" as texttransform;
 
 io.printf("%s=%d\n", texttransform.t("max retries", "case=constant"), 3);   # MAX_RETRIES=3
 io.printf("%s\n", texttransform.t("  Crème Brûlée  ", "trim|fold|case=kebab"));   # creme-brulee
