@@ -1,6 +1,6 @@
 [package]
-name = "@mplx/texttransform"
-version = "0.4.0"
+name = "@skiffyard/texttransform"
+version = "0.5.0"
 description = "Text transformations in printf's modifier style: case conversions (snake, kebab, camel, pascal, leet, ...), slicing, truncation"
 license = "LGPL-3.0-only"
 authors = ["mplx <mplx@jennifer-lang.dev>"]
@@ -8,9 +8,9 @@ capabilities = []
 keywords = ["text-transform", "case", "snake-case", "camel-case", "kebab-case", "slugify", "leet", "strings"]
 
 [package.urls]
-deck = "https://raw.githubusercontent.com/mplx/deck-texttransform/main/deck.toml"
-homepage = "https://github.com/mplx/deck-texttransform"
-manual = "https://mplx.github.io/deck-texttransform/"
+deck = "https://raw.githubusercontent.com/skiffyard/deck-texttransform/main/deck.toml"
+homepage = "https://github.com/skiffyard/deck-texttransform"
+manual = "https://skiffyard.github.io/deck-texttransform/"
 
 [engines]
 jennifer = ">=0.26.0"
